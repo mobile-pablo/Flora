@@ -27,7 +27,8 @@ fun FloraTheme(
 
     CompositionLocalProvider(
         LocalSpacing provides Spacing(),
-        LocalProjectColor provides colors
+        LocalProjectColor provides colors,
+        LocalFontSize provides FontSize()
     ) {
         MaterialTheme(
             typography = Typography,
