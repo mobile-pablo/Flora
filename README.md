@@ -1,5 +1,4 @@
  # 🌱 Flora
- #### Description
  Flora is an app where Users can sell their plants to other people in area
  
  #### Plans 💡​
