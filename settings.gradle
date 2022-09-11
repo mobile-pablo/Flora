@@ -13,7 +13,7 @@ dependencyResolutionManagement {
     }
 }
 rootProject.name = "Flora"
-include ':app'
+include ':flora'
 include ':core'
 include ':uicomponents'
 include ':domain'
