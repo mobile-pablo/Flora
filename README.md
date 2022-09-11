@@ -18,10 +18,7 @@
 * Animations
 * Compose navigation
 
-<div align="center">
- <br/>
- <h3>Desired UI (similar)</h3>
+### Inspired by this design 💎​
 <a href="https://www.behance.net/gallery/63576965/Vetch-Online-Plant-Selling-App-Concept">
-<img src="readme/designed_ui.png" width="100%"/></a>
- </div>
+<img src="readme/designed_ui.png" width="50%"/></a>
 <hr/>
