@@ -23,6 +23,7 @@ android {
 dependencies {
     api project('::networking')
 
+    implementation "io.insert-koin:koin-android:$rootProject.koin"
     testImplementation "junit:junit:$rootProject.junit"
     androidTestImplementation "androidx.test.ext:junit:$rootProject.junitExt"
     androidTestImplementation "androidx.test.espresso:espresso-core:$rootProject.espresso"

@@ -23,7 +23,7 @@ android {
         compose true
     }
     composeOptions {
-        kotlinCompilerExtensionVersion compose_version
+        kotlinCompilerExtensionVersion compose_core
     }
     packagingOptions {
         resources {
@@ -35,15 +35,16 @@ android {
 dependencies {
     implementation project('::domain')
 
+    implementation "io.insert-koin:koin-android:$rootProject.koin"
     implementation "androidx.core:core-ktx:$rootProject.androidx_core"
-    implementation "androidx.compose.ui:ui:$rootProject.compose_version"
-    implementation "androidx.compose.material:material:$rootProject.compose_version"
-    implementation "androidx.compose.ui:ui-tooling-preview:$rootProject.compose_version"
+    implementation "androidx.compose.ui:ui:$rootProject.compose_core"
+    implementation "androidx.compose.material:material:$rootProject.compose_core"
+    implementation "androidx.compose.ui:ui-tooling-preview:$rootProject.compose_core"
     implementation "androidx.lifecycle:lifecycle-runtime-ktx:$rootProject.compose_ui"
     implementation "androidx.activity:activity-compose:$rootProject.compose_ui"
     testImplementation 'junit:junit:4.13.2'
     androidTestImplementation "androidx.test.ext:junit:$rootProject.junitExt"
     androidTestImplementation "androidx.test.espresso:espresso-core:$rootProject.espresso"
-    androidTestImplementation "androidx.compose.ui:ui-test-junit4:$rootProject.compose_version"
-    debugImplementation "androidx.compose.ui:ui-tooling:$rootProject.compose_version"
+    androidTestImplementation "androidx.compose.ui:ui-test-junit4:$rootProject.compose_core"
+    debugImplementation "androidx.compose.ui:ui-tooling:$rootProject.compose_core"
 }

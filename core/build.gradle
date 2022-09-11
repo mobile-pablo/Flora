@@ -17,8 +17,7 @@ android {
 }
 
 dependencies {
-    implementation "com.google.dagger:hilt-android:$rootProject.hilt"
-    kapt "com.google.dagger:hilt-compiler:$rootProject.hilt"
+    implementation "io.insert-koin:koin-android:$rootProject.koin"
 
     api "com.squareup.moshi:moshi-kotlin:$rootProject.moshi"
     api "com.squareup.retrofit2:converter-moshi:$rootProject.moshi_retrofit"
