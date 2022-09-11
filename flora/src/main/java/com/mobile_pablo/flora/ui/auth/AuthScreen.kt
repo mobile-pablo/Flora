@@ -2,18 +2,25 @@ package com.mobile_pablo.flora.ui.auth
 
 import androidx.compose.foundation.background
 import androidx.compose.foundation.layout.Box
+import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.fillMaxSize
+import androidx.compose.material.MaterialTheme
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
-import androidx.compose.ui.graphics.Color
+import androidx.compose.ui.tooling.preview.Preview
+import com.mobile_pablo.uicomponents.config.theme.projectColor
+import com.mobile_pablo.uicomponents.views.auth.AuthHeaderSection
 
+@Preview
 @Composable
-fun authScreen() {
+fun AuthScreen() {
     Box(
         modifier = Modifier
-            .background(Color.White)
+            .background(MaterialTheme.projectColor.color_60)
             .fillMaxSize()
     ) {
-
+        Column {
+            AuthHeaderSection()
+        }
     }
 }
