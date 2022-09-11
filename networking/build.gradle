@@ -1,6 +1,8 @@
 plugins {
     id 'com.android.library'
     id 'org.jetbrains.kotlin.android'
+    id 'kotlin-android'
+    id 'kotlin-kapt'
 }
 
 android {
@@ -15,26 +17,36 @@ android {
     }
 
     buildTypes {
-        release {
+        debug {
             minifyEnabled false
-            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+            buildConfigField 'String', 'SERVER_URL', '"  https://google.com/"'
         }
-    }
-    compileOptions {
-        sourceCompatibility JavaVersion.VERSION_1_8
-        targetCompatibility JavaVersion.VERSION_1_8
-    }
-    kotlinOptions {
-        jvmTarget = '1.8'
+        release {
+            minifyEnabled true
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+
+
+            buildConfigField 'String', 'SERVER_URL', '"https://google.com/"'
+        }
     }
 }
 
 dependencies {
+    api project('::storage')
 
-    implementation 'androidx.core:core-ktx:1.7.0'
-    implementation 'androidx.appcompat:appcompat:1.4.2'
-    implementation 'com.google.android.material:material:1.6.1'
-    testImplementation 'junit:junit:4.13.2'
-    androidTestImplementation 'androidx.test.ext:junit:1.1.3'
-    androidTestImplementation 'androidx.test.espresso:espresso-core:3.4.0'
+    implementation "com.squareup.okhttp3:okhttp:$rootProject.okhttp"
+    api "com.squareup.okhttp3:logging-interceptor:$rootProject.okhttp"
+    implementation "com.squareup.retrofit2:retrofit:$rootProject.retrofit"
+    implementation "com.squareup.retrofit2:converter-scalars:$rootProject.retrofit"
+
+    //WTF: I have no idea why it needs to be imported into this module only
+    api "org.jetbrains.kotlinx:kotlinx-coroutines-core:$rootProject.coroutines"
+
+    testImplementation "junit:junit:$rootProject.junit"
+    testImplementation "com.nhaarman.mockitokotlin2:mockito-kotlin:$rootProject.mockitoKotlin"
+    testImplementation "com.squareup.okhttp3:mockwebserver:$rootProject.okhttp"
+    testImplementation "org.jetbrains.kotlinx:kotlinx-coroutines-test:1.5.1"
+
+    androidTestImplementation "androidx.test.ext:junit:$rootProject.junitExt"
+    androidTestImplementation "androidx.test.espresso:espresso-core:$rootProject.espresso"
 }
