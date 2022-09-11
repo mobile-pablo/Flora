@@ -19,13 +19,14 @@ android {
     buildTypes {
         debug {
             minifyEnabled false
-            buildConfigField 'String', 'SERVER_URL', '"  https://google.com/"'
+            //TODO: temp address
+            buildConfigField 'String', 'SERVER_URL', '"  https://inco-app-api-test.azurewebsites.net/"'
         }
         release {
             minifyEnabled true
             proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
 
-
+            //TODO: temp address
             buildConfigField 'String', 'SERVER_URL', '"https://google.com/"'
         }
     }
