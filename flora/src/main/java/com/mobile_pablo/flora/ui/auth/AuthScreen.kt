@@ -1,4 +1,4 @@
-package com.mobile_pablo.uicomponents.views.auth
+package com.mobile_pablo.flora.ui.auth
 
 import androidx.compose.foundation.background
 import androidx.compose.foundation.layout.Box
