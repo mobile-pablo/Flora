@@ -1,7 +1,11 @@
  # 🌱 Flora
+ #### Description
+ Flora is an app where Users can sell their plants to other people in area
  
- # Tech Stack
+ #### Plans 💡​
+ In future I want this app to be NY startup. Which may be impossible but future is ours ✨​
  
+ ## Tech Stack
 * MVVM
 * Koin
 * Retrofit + Okhttp
