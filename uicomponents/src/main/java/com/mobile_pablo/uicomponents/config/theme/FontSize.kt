@@ -1,7 +1,8 @@
 package com.mobile_pablo.uicomponents.config.theme
 
+import androidx.compose.runtime.Composable
+import androidx.compose.runtime.ReadOnlyComposable
 import androidx.compose.runtime.compositionLocalOf
-import androidx.compose.ui.unit.Dp
 import androidx.compose.ui.unit.TextUnit
 import androidx.compose.ui.unit.sp
 
@@ -21,3 +22,8 @@ data class FontSize(
 )
 
 val LocalFontSize = compositionLocalOf { FontSize() }
+
+val fontSize: FontSize
+    @Composable
+    @ReadOnlyComposable
+    get() = LocalFontSize.current

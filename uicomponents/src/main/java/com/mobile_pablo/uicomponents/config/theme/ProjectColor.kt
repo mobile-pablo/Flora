@@ -1,5 +1,7 @@
 package com.mobile_pablo.uicomponents.config.theme
 
+import androidx.compose.runtime.Composable
+import androidx.compose.runtime.ReadOnlyComposable
 import androidx.compose.runtime.compositionLocalOf
 import androidx.compose.ui.graphics.Color
 
@@ -12,3 +14,8 @@ data class ProjectColor(
 )
 
 val LocalProjectColor = compositionLocalOf { ProjectColor() }
+
+val projectColor: ProjectColor
+    @Composable
+    @ReadOnlyComposable
+    get() = LocalProjectColor.current
