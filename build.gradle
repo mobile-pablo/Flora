@@ -6,13 +6,10 @@ buildscript {
         androidx_core = '1.7.0'
         build_gradle = '7.1.3'
         kotlin_gradle = '1.6.10'
-        google_services = '4.3.10'
-        crashlytics = '2.7.1'
 
         //android
         lifecycle = '2.4.0'
         excuseMe = '0.9.5'
-        firebase_bom = '28.4.0'
 
         //core
         hilt = '2.39.1'
@@ -28,7 +25,6 @@ buildscript {
 
         //storage
         room = '2.4.1'
-        securityCrypto = '1.1.0-alpha03'
 
         //test
         junit = '4.13.2'
