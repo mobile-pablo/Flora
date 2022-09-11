@@ -10,7 +10,7 @@ import androidx.compose.material.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.tooling.preview.Preview
-import com.mobile_pablo.flora.ui.theme.FloraTheme
+import com.mobile_pablo.uicomponents.config.theme.FloraTheme
 
 class MainActivity : ComponentActivity() {
 

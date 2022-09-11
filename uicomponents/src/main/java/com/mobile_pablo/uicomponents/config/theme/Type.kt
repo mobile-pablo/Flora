@@ -1,4 +1,4 @@
-package com.mobile_pablo.flora.ui.theme
+package com.mobile_pablo.uicomponents.config.theme
 
 import androidx.compose.material.Typography
 import androidx.compose.ui.text.TextStyle
