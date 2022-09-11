@@ -1,5 +1,6 @@
 package com.mobile_pablo.uicomponents.config.theme
 
+import androidx.compose.material.MaterialTheme
 import androidx.compose.runtime.Composable
 import androidx.compose.runtime.ReadOnlyComposable
 import androidx.compose.runtime.compositionLocalOf
@@ -27,7 +28,7 @@ data class Spacing(
 
 val LocalSpacing = compositionLocalOf { Spacing() }
 
-val spacing: Spacing
+val MaterialTheme.spacing: Spacing
     @Composable
     @ReadOnlyComposable
     get() = LocalSpacing.current

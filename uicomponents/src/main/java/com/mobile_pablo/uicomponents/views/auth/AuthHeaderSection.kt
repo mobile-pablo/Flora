@@ -8,9 +8,12 @@ import androidx.compose.material.MaterialTheme
 import androidx.compose.material.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
-import androidx.compose.ui.graphics.Color
+import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.unit.sp
+import com.mobile_pablo.uicomponents.R
+import com.mobile_pablo.uicomponents.config.theme.fontSize
+import com.mobile_pablo.uicomponents.config.theme.projectColor
 
 @Composable
 fun AuthHeaderSection(
@@ -18,19 +21,19 @@ fun AuthHeaderSection(
 ) {
     Box(
         modifier = modifier
-            .background(MaterialTheme.colors.primary)
+            .background(MaterialTheme.projectColor.color_60)
             .fillMaxWidth()
     ) {
         Column {
             Text(
-                text = "Welcome to Flora",
+                text = stringResource(R.string.authTitle),
                 fontWeight = FontWeight.Bold,
-                fontSize = 15.sp
+                fontSize = MaterialTheme.fontSize.font_20
             )
             Text(
-                text = "Sell houseplants in Your local community",
+                text = stringResource(R.string.authDescription),
                 fontWeight = FontWeight.Medium,
-                fontSize = 12.sp
+                fontSize = MaterialTheme.fontSize.font_12
             )
         }
     }

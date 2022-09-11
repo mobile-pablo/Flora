@@ -13,15 +13,15 @@ fun FloraTheme(
 ) {
     val colors = if (darkTheme) {
         ProjectColor(
-            Color_60 = Color(0xFFFF8C00),
-            Color_30 = Color(0xFFFFAE4C),
-            Color_10 = Color(0xFFFFD199),
+            color_60 = Color(0xFFFF8C00),
+            color_30 = Color(0xFFFFAE4C),
+            color_10 = Color(0xFFFFD199),
         )
     } else {
         ProjectColor(
-            Color_60 = Color(0xFF38A739),
-            Color_30 = Color(0xFF73C174),
-            Color_10 = Color(0xFFAFDBAF),
+            color_60 = Color(0xFF38A739),
+            color_30 = Color(0xFF73C174),
+            color_10 = Color(0xFFAFDBAF),
         )
     }
 
