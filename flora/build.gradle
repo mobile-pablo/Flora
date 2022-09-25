@@ -22,16 +22,20 @@ android {
         }
     }
 
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+    kotlinOptions {
+        jvmTarget = '1.8'
+        useIR = true
+    }
     buildFeatures {
         compose true
     }
     composeOptions {
-        kotlinCompilerExtensionVersion compose_core
-    }
-    packagingOptions {
-        resources {
-            excludes += '/META-INF/{AL2.0,LGPL2.1}'
-        }
+        kotlinCompilerExtensionVersion compose_version
+        kotlinCompilerVersion '1.4.32'
     }
 }
 
@@ -41,7 +45,6 @@ dependencies {
     implementation project('::domain')
 
     implementation "androidx.lifecycle:lifecycle-livedata-ktx:$rootProject.lifecycle"
-    implementation "com.github.AraujoJordan:ExcuseMe:$rootProject.excuseMe"
 
     implementation "androidx.core:core-ktx:$rootProject.androidx_core"
     implementation "androidx.compose.ui:ui:$rootProject.compose_core"

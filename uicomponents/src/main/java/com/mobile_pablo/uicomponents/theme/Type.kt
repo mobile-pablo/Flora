@@ -1,4 +1,4 @@
-package com.mobile_pablo.uicomponents.config.theme
+package com.mobile_pablo.uicomponents.theme
 
 import androidx.compose.material.Typography
 import androidx.compose.ui.text.TextStyle

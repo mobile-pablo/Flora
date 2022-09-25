@@ -3,14 +3,8 @@ package com.mobile_pablo.flora
 import android.os.Bundle
 import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
-import androidx.compose.foundation.layout.fillMaxSize
-import androidx.compose.material.MaterialTheme
-import androidx.compose.material.Surface
-import androidx.compose.material.Text
-import androidx.compose.runtime.Composable
-import androidx.compose.ui.Modifier
-import androidx.compose.ui.tooling.preview.Preview
-import com.mobile_pablo.uicomponents.config.theme.FloraTheme
+import com.mobile_pablo.flora.ui.auth.AuthScreen
+import com.mobile_pablo.uicomponents.theme.FloraTheme
 
 class MainActivity : ComponentActivity() {
 
@@ -18,27 +12,8 @@ class MainActivity : ComponentActivity() {
         super.onCreate(savedInstanceState)
         setContent {
             FloraTheme {
-                // A surface container using the 'background' color from the theme
-                Surface(
-                    modifier = Modifier.fillMaxSize(),
-                    color = MaterialTheme.colors.background
-                ) {
-                    Greeting("Android")
-                }
+                AuthScreen()
             }
         }
-    }
-}
-
-@Composable
-fun Greeting(name: String) {
-    Text(text = "Hello $name!")
-}
-
-@Preview(showBackground = true)
-@Composable
-fun DefaultPreview() {
-    FloraTheme {
-        Greeting("Android")
     }
 }

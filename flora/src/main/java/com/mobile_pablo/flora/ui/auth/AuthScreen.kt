@@ -8,8 +8,7 @@ import androidx.compose.material.MaterialTheme
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.tooling.preview.Preview
-import com.mobile_pablo.uicomponents.config.theme.projectColor
-import com.mobile_pablo.uicomponents.views.auth.AuthHeaderSection
+import com.mobile_pablo.uicomponents.theme.projectColor
 
 @Preview
 @Composable

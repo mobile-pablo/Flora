@@ -41,7 +41,6 @@ dependencies {
     implementation "com.squareup.retrofit2:converter-scalars:$rootProject.retrofit"
     implementation "io.insert-koin:koin-android:$rootProject.koin"
 
-    //WTF: I have no idea why it needs to be imported into this module only
     api "org.jetbrains.kotlinx:kotlinx-coroutines-core:$rootProject.coroutines"
 
     testImplementation "junit:junit:$rootProject.junit"

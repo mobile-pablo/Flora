@@ -1,4 +1,4 @@
-package com.mobile_pablo.uicomponents.config.theme
+package com.mobile_pablo.uicomponents.theme
 
 import androidx.compose.material.MaterialTheme
 import androidx.compose.runtime.Composable

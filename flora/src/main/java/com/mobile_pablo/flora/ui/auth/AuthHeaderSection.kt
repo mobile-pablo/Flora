@@ -1,4 +1,4 @@
-package com.mobile_pablo.uicomponents.views.auth
+package com.mobile_pablo.flora.ui.auth
 
 import androidx.compose.foundation.background
 import androidx.compose.foundation.layout.Box
@@ -10,13 +10,10 @@ import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.text.font.FontWeight
-import androidx.compose.ui.tooling.preview.Preview
-import androidx.compose.ui.unit.sp
 import com.mobile_pablo.uicomponents.R
-import com.mobile_pablo.uicomponents.config.theme.fontSize
-import com.mobile_pablo.uicomponents.config.theme.projectColor
+import com.mobile_pablo.uicomponents.theme.fontSize
+import com.mobile_pablo.uicomponents.theme.projectColor
 
-@Preview
 @Composable
 fun AuthHeaderSection(
     modifier: Modifier = Modifier
